@@ -47,9 +47,11 @@
                 ypos = ypos + yspeed * ydirection;
                 if (xpos > width - 75 || xpos < 75) {
                     xdirection *= -1;
+                    tint(random(0, 360), 100, 100, 50)
                 }
                 if (ypos > height - 75 || ypos < 75) {
                     ydirection *= -1;
+                    tint(random(0, 360), 100, 100, 50)
                 }
                 image(img, xpos, ypos, 150, 150);
             }
